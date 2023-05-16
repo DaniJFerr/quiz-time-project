@@ -202,6 +202,10 @@
   }
 
   @media (max-width:900px) {
+
+    .AboutContent{
+      text-align: justify ;
+    }
     
     .App-header {
       background-repeat: no-repeat;
@@ -223,7 +227,6 @@
     margin: 0px 0px
    }
 
- 
   }
 
   @media (max-width: 390px) {

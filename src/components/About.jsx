@@ -6,9 +6,9 @@ export default function About(props){
     
     return(
 
-        <Card sx={{ minWidth: 275 }}>
+        <Card sx={{ minWidth: 275 , minHeight: 465}}>
         <CardContent>
-          <Typography variant="h2" component="div" align= 'center'>
+          <Typography variant="h2" component="div" align= 'center '>
             About
           </Typography>
           <Typography sx={{ fontSize: 14 }} color="text.secondary" align= 'center' gutterBottom>
@@ -16,7 +16,7 @@ export default function About(props){
           Welcome to our About page!
           <br /><br />  
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" className="AboutContent">
            We are excited to tell you about our latest project - a Quiz React app.
 
           Our Quiz React app is a fun and interactive way to test your knowledge on a variety of subjects. Whether you're looking to challenge yourself or just have some fun, our app has something for everyone.
@@ -28,7 +28,7 @@ export default function About(props){
           But what sets our app apart from other quiz apps is its use of React technology. React allows us to create a fast and dynamic user interface, which means you can experience seamless navigation through quizzes and get instant feedback on your answers.   
           <br /><br />
           So why not give our Quiz React app a try? Test your knowledge and see how you stack up against others. We hope you enjoy using our app as much as we enjoyed creating it.
-            <br />
+          <br />
           </Typography>
           </CardContent>
       </Card>
