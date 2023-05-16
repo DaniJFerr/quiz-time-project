@@ -1,0 +1,235 @@
+
+      /* body{
+          background-color: rgb(220, 215, 215);
+      } */
+   .container{
+    width: 100%;  
+    height: 100%;
+     margin: 0px;
+     -webkit-box-shadow: -1px 3px 12px -1px #000000; 
+     box-shadow: -1px 3px 12px -1px #000000;
+     background-color: #fff;
+   }
+
+   h1, h2, h3, h4, h5, h6{
+
+   }
+   
+   .main{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     width: 100%;
+     height: 425px;  
+     background-color: #C0C4DF; 
+   }
+   
+.App-header {
+    background-color: #282c34;
+    background-image: url('../../../public/synthwave-retro-2.jpg');
+    background-size: 1020px 450px;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin-top: 70px ;
+    padding-top: 30px;
+  }
+  
+  .neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px  #f09,
+      0 0 10px #f09,
+      0 0 21px #f09,
+      0 0 42px rgb(93, 188, 240),
+      0 0 82px rgb(93, 188, 240),
+      0 0 92px rgb(93, 188, 240),
+      0 0 102px rgb(93, 188, 240),
+      0 0 151px rgb(93, 188, 240)
+  }
+  
+  /* Additional styling */
+  
+  .App-title{
+      font-size: 6.2rem;
+      width: 400px;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+      text-align: center; 
+      display: flex;
+      margin: 0px auto;
+      padding: 0px ;
+      animation: flicker 1.5s infinite alternate;   
+      border: 0.2rem solid #fff;
+      border-radius: 2rem;
+      box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #1336fe,
+                0 0 0.8rem #1336fe,
+                0 0 2.8rem #1336fe,
+                inset 0 0 1.3rem #1336fe; 
+    }
+  
+  .App-header h2 {
+    position: relative;
+    font-family: "Bungee Shade";
+    font-size: 6.5rem;
+    animation: flicker 1.5s infinite alternate;  
+    margin: -50px !important;
+  }
+
+  .App-header h1 {
+    position: absolute;
+    font-family: "Pacifico";
+    font-size: 6rem;
+    animation: pulsate 1.5s infinite alternate;  
+    margin-bottom: 0 !important;
+    padding-top: 130px !important;
+    rotate: -10deg;
+  }
+  
+  .pulsate {
+     animation: pulsate 1s infinite alternate;     
+  }
+
+  .footer{
+    background-color: #fff59d;
+    height: 150px;
+    margin: 0px 0px;
+    padding : 10px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+ .footer p{
+    font-family: 'Bungee Shade', sans-serif;
+    font-weight: bold;
+    color: #c4c65a;
+    background-color: #1e1e3a;
+    color: transparent;
+    text-shadow: 1px 1px 2px rgba(253, 254, 186, 0.87);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+    padding-top: 1px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2px auto;
+  }
+
+  .script-font {
+    font-family: 'Pacifico';
+ }
+
+  .footer ul{
+   list-style-type: none;
+   display: flex;
+   justify-content: center;
+   padding: 15px 10px;
+  }
+
+
+ .footer li, a {
+ font-size: 20px;
+  color: #f09;
+  text-decoration: none;
+  margin: 0px 10px;
+  
+}
+
+.footer a:hover{
+  transform:  scale(1.1);
+  transition: 500ms;
+  color: rgb(93, 188, 240);
+}
+  
+  @keyframes pulsate {
+      
+    100% {
+  
+        text-shadow:
+        0 0 4px rgb(93, 188, 240),
+        0 0 11px rgb(93, 188, 240),
+        0 0 19px #fff,
+        0 0 42px #f09,
+        0 0 82px #f09,
+        0 0 92px #f09,
+        0 0 102px #f09,
+        0 0 151px #f09
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 4px rgb(93, 188, 240),
+      0 0 10px rgb(93, 188, 240),
+      0 0 18px #fff,
+      0 0 42px #f09,
+      0 0 82px #f09,
+      0 0 92px #f09,
+      0 0 102px #f09,
+      0 0 151px #f09
+    }
+  }
+  
+  @keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #2cb9e8,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 38px #f09,
+        0 0 73px #f09,
+        0 0 80px #f09,
+        0 0 94px #f09,
+        0 0 140px #f09;
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+  @media (max-width:1918px) {
+    .main{
+      height: auto;
+    }
+  }
+
+  @media (max-width:900px) {
+    
+    .App-header {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .App-title{
+      width: 360px !important;
+      height: 160px !important;
+    }
+
+   .main{ 
+     margin: 0px 0px;
+     justify-content: center;
+   }
+
+   .container{
+    margin: 0px 0px
+   }
+
+ 
+  }
+
+  @media (max-width: 390px) {
+
+    button{
+      max-width: 30px;
+      margin: 0px;
+     }
+     
+  }
