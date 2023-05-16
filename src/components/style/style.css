@@ -197,7 +197,7 @@
 
   @media (max-width:1918px) {
     .main{
-      height: auto;
+      height: 100% !important ;
     }
   }
 
@@ -209,6 +209,7 @@
     }
 
     .App-title{
+      margin-top: 50px;
       width: 360px !important;
       height: 160px !important;
     }
