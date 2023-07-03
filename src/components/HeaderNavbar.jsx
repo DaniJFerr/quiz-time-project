@@ -48,7 +48,7 @@ const getQuizClick = () => {
   
   const drawer = (
       <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-        <Typography variant="h6" sx={{ my: 2, color: "#fff"}}>
+        <Typography variant="h6" sx={{ my: 2}}>
          Quiz Time
         </Typography>
         <Divider />
