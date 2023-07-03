@@ -31,7 +31,7 @@ export default function Main({ quizzes }) {
     <div className="main" style={{ height: quizzes.length > 5 ? '100%' : '425px' }}>
       {quizzes.map((quiz, index) => {
         return (
-          <div key={index}>
+          <div className="questionCard" key={index}>
             <Question
               question={quiz.question}  
               category={quiz.category}

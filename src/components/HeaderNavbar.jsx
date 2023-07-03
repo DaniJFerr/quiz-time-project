@@ -48,7 +48,7 @@ const getQuizClick = () => {
   
   const drawer = (
       <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-        <Typography variant="h6" sx={{ my: 2 }}>
+        <Typography variant="h6" sx={{ my: 2, color: "#fff"}}>
          Quiz Time
         </Typography>
         <Divider />
@@ -213,6 +213,7 @@ const getQuizClick = () => {
                display: { xs: 'block', sm: 'none' },
                '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
              }}
+             className="Drawer"
            >
              {drawer}
            </Drawer>

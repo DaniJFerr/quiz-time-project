@@ -64,8 +64,7 @@ export default function Question({
   };
 
   return (
-    <div className="outer-div">
-      <div style={styles.container}>
+    <div className="outer-div" style={styles.container}>
         <div className="questionCard" style={styles.questionCard}>
           <div className="category" style={styles.category}>
             {category}
@@ -101,7 +100,6 @@ export default function Question({
           correctAnswer={correctAnswer}
           />
         </div>
-      </div>
     </div>
   );
 }

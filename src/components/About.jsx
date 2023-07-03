@@ -2,16 +2,26 @@ import React from "react";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+
 export default function About(props){
+
+  // const card = createTheme({
+  //   palette: {
+  //     primary: {  
+  //       main: "#90caf9",  
+  //     },
+  //   },
+  // }); 
+
     
     return(
 
-        <Card sx={{ minWidth: 275 , minHeight: 465}}>
-        <CardContent>
-          <Typography variant="h2" component="div" align= 'center '>
-            About
+        <Card className="cardAbout">
+        <CardContent sx={{ minWidth: 275 , minHeight: 375 }}>
+          <Typography variant="h2" component="div" align= 'center' className="AboutTitle">
+            About 
           </Typography>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" align= 'center' gutterBottom>
+          <Typography  align= 'center' gutterBottom className="AboutTitle">
 
           Welcome to our About page!
           <br /><br />  
